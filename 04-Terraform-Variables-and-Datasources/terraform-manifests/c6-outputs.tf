@@ -15,5 +15,5 @@ output "instance_publicdns" {
 # SSH Connection Command
 output "ssh_connection_command" {
   description = "SSH command to connect to the EC2 instance"
-  value = "ssh -i terraform-key-new.pem ec2-user@${aws_instance.gigznec2vm.public_ip}"
+  value = "ssh -i private-key/terraform-key-${random_string.suffix.result}.pem ec2-user@${aws_instance.gigznec2vm.public_ip}"
 }
