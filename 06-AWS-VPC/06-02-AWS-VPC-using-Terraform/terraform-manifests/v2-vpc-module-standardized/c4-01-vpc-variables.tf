@@ -4,7 +4,7 @@
 variable "vpc_name" {
   description = "VPC Name"
   type = string 
-  default = "myvpc"
+  default = "gigzn-vpc"
 }
 
 # VPC CIDR Block
@@ -18,7 +18,7 @@ variable "vpc_cidr_block" {
 variable "vpc_availability_zones" {
   description = "VPC Availability Zones"
   type = list(string)
-  default = ["us-east-1a", "us-east-1b"]
+  default = ["us-south-1a", "us-south-1b"]
 }
 
 # VPC Public Subnets
